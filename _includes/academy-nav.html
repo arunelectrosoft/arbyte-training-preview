@@ -1,0 +1,16 @@
+{% assign navigation = site.data.navigation %}
+<nav class="academy-nav" aria-label="Primary navigation">
+  <div class="academy-nav__inner">
+    <a class="academy-nav__brand" href="{{ '/' | relative_url }}" aria-label="Arbyte Engineering Academy preview home">
+      <span class="academy-nav__mark" aria-hidden="true">A</span><span>Arbyte</span>
+    </a>
+    <details class="academy-nav__menu">
+      <summary aria-label="Open navigation menu">Menu</summary>
+      <ul>
+        {% for item in navigation %}
+          <li><a class="{% if item.url == '/' and page.url == '/' %}active{% endif %}" href="{% if item.url contains '://' %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}"{% if item.url contains '://' %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </details>
+  </div>
+</nav>

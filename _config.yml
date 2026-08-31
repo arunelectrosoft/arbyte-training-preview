@@ -1,0 +1,39 @@
+title: Arbyte Engineering Academy Preview
+description: Preview of hands-on embedded, Linux, RTOS, automotive, C/C++, Python, and Edge AI training
+show_downloads: false
+google_analytics:
+theme: jekyll-theme-architect
+
+collections_dir: blogContents
+
+collections:
+  python_concepts:
+    output: true
+    permalink: /:collection/:path
+  python_exercise:
+    output: true
+    permalink: /:collection/:path
+  python_project_list:
+    output: true
+    permalink: /:collection/:path
+  embedded_systems_fundamentals:
+    output: true
+    permalink: /:collection/:path
+  linux_for_embedded_engineers:
+    output: true
+    permalink: /:collection/:path
+  zephyr_rtos_essentials:
+    output: true
+    permalink: /:collection/:path
+  raspberry_pi_edge_ai:
+    output: true
+    permalink: /:collection/:path
+  modern_c_cpp:
+    output: true
+    permalink: /:collection/:path
+  automotive_software_basics:
+    output: true
+    permalink: /:collection/:path
+  introduction_to_ai_for_engineers:
+    output: true
+    permalink: /:collection/:path

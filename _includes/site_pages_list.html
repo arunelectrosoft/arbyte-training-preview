@@ -1,0 +1,14 @@
+<!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+{% for collection_variable in site.collections | reversed %}
+   {% if  collection_variable.label == "posts" %}
+   <!-- Do nothing -->
+   {% else %}
+    <h2>
+    {{ collection_variable.label }}
+    </h2>
+  {% for node in collection_variable.docs %}
+      <h4 class="card-title b5 h4-sm"><a href="{{ site.baseurl }}{{ node.url }}"> {{ node.title }} </a></h4>
+  {% endfor %}
+  {%endif%}
+{% endfor %}
+<!-- end custom head snippets -->
